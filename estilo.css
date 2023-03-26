@@ -1,0 +1,33 @@
+body{
+    background-color: lightblue ;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+h2{
+    border-style: solid;
+    border-color: darkblue;
+}
+
+.nav-enlace{
+    display: inline-block;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background-color: mediumblue;
+}
+nav{
+    background-color: darkblue;
+    padding: 10px;
+}
+
+div.container {
+    text-align: center;
+  }
+  
+  ul.myUL {
+    display: inline-block;
+    text-align: left;
+  }
