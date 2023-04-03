@@ -5,63 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Elmer Walker</title>
+    <script src="https://kit.fontawesome.com/79e06438ef.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="js/function.js"></script>
-    <div>
+    <script src="function.js"></script>
+    <!--Menu navegacion-->
     <nav>
-        <a href="#" class="nav-enlace" onclick="pulsarboton1()">Sobre mi</a>
-        <a href="#" class="nav-enlace" onclick="pulsarboton2()">Habilidades</a>
-        <a href="#" class="nav-enlace" onclick="pulsarboton3()">Contacto</a>
+        <ul>
+            <li><a href="#sobremi">Sobre mi</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
-    </div>
-    
-    <div>
-    <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Elmer Walker portrait">
-    </div>
-    <div>
-    <h1>Elmer Walker</h1>
-    <h2>Diseñador Web - Programador</h2>
-    </div>
-
-    <div id="sobremi">
-        <h2>Sobre mi</h2>
-        <p>Nací el 12/5/1996 en Los Ángeles, EE.UU. Soy Técnico Superior en Informática, mi trayectoria incluye desarrollo independiente de
-            software y diseño web para empresas.</p>
-    </div>
-
-    <div id="habilidades"> 
-        <h2>Habilidades</h2>
-    <div class="conteiner">
-        <h3>Programación</h3>
-        <ul class="myUL">
-        <li>Javascript</li>
-        <li>Python</li>
-        <li>Java</li>
-        </ul>
-    </div>
-    <div class="conteiner">
-        <h3>Idiomas</h3>
-        <ul class="myUL">
-        <li>Español - Intermedio</li>
-        <li>Inglés - Nativo</li>
-        <li>Francés - Intermedio</li>
-        </ul>
-    </div>
-    </div>
-    
-    <div id="contacto">
-        <h2>Contacto</H2>
-            <ul class="myUL">
-                <li>Email: elmer.walker@example.com</li>
-                <li>Teléfono: (415)6719579</li>
-                <li>Dirección: 5084 W Dallas St</li>
+    <article>
+        <section id="inicio">
+            <h1>Elmer Walker</h1>
+            <h2>#programador</h2>
+            <h2>#diseñador web</h2>
+            <ul id="redessociales">
+                <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </section>
+        <section id="sobremi">    
+            <div id="imgsobremi"><img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Emer Walker portrait"></div>
+            <div id="bodysobremi" >
+                <h2>Sobre mi</h2>
+                <p>Nací el 12/5/1996 en Los Ángeles, EE.UU. Soy Técnico Superior en Informática, mi trayectoria incluye desarrollo independiente de software y diseño web para empresas.</p>
+                <p id="pp" style="display: none;">Graduado en la Universidad de California con el título anteriormente mencionado, conseguí mi primer empleo desarrollando aplicaciones de escritorio, fuí freelancer por un tiempo hasta que obtuve un puesto como analista de datos en una empresa.</p>
+                <div class="masinfo"><button type="button" onclick="pulsarboton1()">MAS INFO</button></div>
+            </div>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <div class="gridexp">
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2019-2023</h3>
+                    <p id="p1" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button" onclick="pulsarboton2()">MAS INFO</button></div>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                    </ul>
+                </div>
+                <div class="cardexp">
+                    <h2>Análisis de datos</h2>
+                    <h3 class="textoizquierda">2017-2023</h3>
+                    <p id="p2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button" onclick="pulsarboton3()">MAS INFO</button></div>
+                    <ul>
+                        <li><i class="fa-brands fa-python"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-solid fa-database"></i></li>
+                    </ul>
+                </div>
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2015-2017</h3>
+                    <p id="p3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button" onclick="pulsarboton4()">MAS INFO</button></div>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                    </ul>
+                </div>
+                <div class="cardexp">
+                    <h2>Desktop development</h2>
+                    <h3 class="textoizquierda">2007-2015</h3>
+                    <p id="p4" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button" onclick="pulsarboton5()">MAS INFO</button></div>
+                    <ul>
+                        <li><i class="fa-brands fa-java"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-brands fa-python"></i></li>
+                    </ul>
+                </div>
+                <!--
+                <div class="filacartas">
+                    <div class="card">
+                        <img src="./img/imagen_portfolio.png" alt="Portfolio 1">
+                        <h3>musica</h3>
+                        <h4>concierto benicassim</h4>
+                        <div class="sep"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="masinfo"><button type="button">MAS INFO</button></div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/imagen_portfolio.png" alt="Portfolio 1">
+                        <h3>musica</h3>
+                        <h4>concierto benicassim</h4>
+                        <div class="sep"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="masinfo"><button type="button">MAS INFO</button></div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/imagen_portfolio.png" alt="Portfolio 1">
+                        <h3>musica</h3>
+                        <h4>concierto benicassim</h4>
+                        <div class="sep"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="masinfo"><button type="button">MAS INFO</button></div>
+                    </div>
+                </div>-->
+                <!--<ul id="analisisdedatos">
+                    <li><i class="fa-brands fa-python"></i></li>
+                    <li><i class="fa-brands fa-square-js"></i></li>
+                    <li><i class="fa-solid fa-database"></i></li>
                 </ul>
-    </div>
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi vel commodi modi optio impedit laboriosam, minus fugiat repudiandae ducimus cum debitis molestiae, natus, labore culpa error porro possimus dignissimos.</p>
+            -->
+            </div>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="lenprog"">
+                <h3>Lenguajes de programación</h3>
+                <h3>Idiomas</h3>
+                
+            </div>
+            <div class="lenprog">
+                <ul id="proglan">
+                    <li>Javascript <i class="fa-brands fa-square-js"></i></li>
+                    <li>Python <i class="fa-brands fa-python"></i></li>
+                    <li>Java <i class="fa-brands fa-java"></i></li>
+                    <li>HTML <i class="fa-brands fa-html5"></i>/CSS <i class="fa-brands fa-css3-alt"></i></li>
+                </ul>
+                <ul>
+                    <li>Español - Intermedio</li>
+                    <li>Inglés - Nativo</li>
+                    <li>Francés - Intermedio</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <h3>Envíame en mensaje</h3>
+            <form action="#">
+                <div class="itemform">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" minlength="2" maxlength="64" required>
+                </div>
+                <div class="itemform">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" name="empresa" id="empresa" minlength="2" maxlength="128">
+                </div>
+                <div class="itemform">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" minlength="10" maxlength="128" required>
+                </div>
+                <div class="itemform">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="33" rows="5"></textarea>
+                </div>
+                <div class="itemform">
+                    <input type="submit" name="enviar">
+                </div>
+            </form>
+        </section>
+    </article>
+    <!-- Footer -->
+    <footer></footer>
 </body>
 </html>
